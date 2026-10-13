@@ -1,0 +1,14 @@
+local.properties
+.gradle/
+build/
+*.apk
+__pycache__/
+*.pyc
+.venv/
+pc/*.egg-info/
+dist/
+*.jks
+*.keystore
+*.idsig
+*.pem
+*.key

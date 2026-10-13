@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=BluRoot
+Comment=Use a rooted Android phone as this PC's Bluetooth radio
+Exec=bluroot
+Icon=bluetooth
+Terminal=false
+Categories=Network;Utility;
+StartupNotify=true

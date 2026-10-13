@@ -1,0 +1,10 @@
+BluRoot
+Copyright 2026
+
+The Android Bluetooth HAL stubs under phone/app/src/main/java/android/hardware/bluetooth
+and phone/halstub are derived from the Apache-2.0 Bumble project:
+https://github.com/google/bumble
+Copyright Google LLC.
+
+Those files remain under the Apache License, Version 2.0.
+See LICENSE.

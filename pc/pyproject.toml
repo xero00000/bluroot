@@ -1,0 +1,15 @@
+[project]
+name = "bluroot"
+version = "1.0.0"
+description = "Use a rooted Android phone as a Bluetooth radio for this PC."
+requires-python = ">=3.10"
+
+[project.scripts]
+bluroot = "bluroot.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["bluroot*"]
