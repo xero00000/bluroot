@@ -2,6 +2,7 @@ name: Tests
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 permissions:
@@ -32,8 +33,9 @@ jobs:
           java-version: '17'
       - name: Install Android SDK components
         run: |
-          yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager 'platforms;android-34' 'build-tools;34.0.0'
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" 'platforms;android-34' 'build-tools;34.0.0'
       - name: Test and build Android release
         working-directory: phone
         run: ./gradlew --max-workers=2 -Pkotlin.compiler.execution.strategy=in-process testDebugUnitTest assembleRelease
